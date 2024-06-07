@@ -19,6 +19,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* your own styling */
@@ -28,7 +29,7 @@ body{
   font-family: "apfel-grotezk";
   border: 14px solid rgb(255, 255, 255);
   background-size: cover;
-height: 100vh;
+  height: 100dvh;
 /* cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" style="font-size: 20px;"><text y="15">🏓</text></svg>'), auto;
  */
 /*  cursor: url(../assets/schlaegerschwarz.png) 128 128, auto; */
@@ -101,6 +102,17 @@ width: 100vw;}
     100% {top: 0vh; left: 99vw;}
 }
 
+@keyframes pingpongmobile {
+  0%   {top: 10vh; left: 0vw;}
+  10%  {top: 30vh; left: 100vw;}
+  30%  {top: 40vh; left: 0vw;}
+  50%  {top: 30vh; left: 99vw;} 
+  60%  {top: 80vh; left: 2vw;}
+  70%  {top: 60vh; left: 90vw;}
+  90%  {top: 50vh; left: 0vw;}
+  100% {top: 0vh; left: 99vw;}
+}
+
 
 .form-image-wrapper {
   position: fixed;
@@ -167,3 +179,10 @@ span {
   transform: translate(-50%, -50%);
   cursor: none; /* Add this line to hide the cursor */
 }
+
+/* Media Query für mobile Geräte 
+@media (max-width: 768px) {
+  .circle{
+    animation: ;
+  }
+  }*/
