@@ -206,3 +206,20 @@ span {
 }
 
 }
+
+/* In deiner CSS-Datei */
+body {
+  cursor: none; /* Standard-Cursor ausblenden */
+}
+
+.navigation a,
+.container.info,
+.text-box {
+  cursor: none; /* Benutzerdefinierten Cursor beibehalten */
+}
+
+/* Vergrößerte Größe für den Cursor */
+#custom-cursor.large {
+  width: 48px;
+  height: 48px;
+}
