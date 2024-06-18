@@ -223,3 +223,9 @@ body {
   width: 48px;
   height: 48px;
 }
+
+.marqueeclosed {
+ background-color: yellow;
+  position: fixed;
+  width: 100vh;
+}
